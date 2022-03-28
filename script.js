@@ -42,21 +42,21 @@ function Makediv(){
 
     document.getElementById("grid-container").appendChild(container);
 
-    var invalue = document.getElementById("time111");
-    var value = invalue.options[invalue.selectedIndex].text;
+    var content = document.getElementById("time111");
+    var value = content.options[content.selectedIndex].text;
     document.getElementById("div21").innerHTML="Wake up Time : " + value;
 
 
-    var invalue = document.getElementById("time222");
-    var value = invalue.options[invalue.selectedIndex].text;
+    var content = document.getElementById("time222");
+    var value = content.options[content.selectedIndex].text;
     document.getElementById("div22").innerHTML="Lunch Time : " + value;
 
-    var invalue = document.getElementById("time333");
-    var value = invalue.options[invalue.selectedIndex].text;
+    var content = document.getElementById("time333");
+    var value = content.options[content.selectedIndex].text;
     document.getElementById("div23").innerHTML="Nap Time : " + value;
 
-    var invalue = document.getElementById("time444");
-    var value = invalue.options[invalue.selectedIndex].text;
+    var content = document.getElementById("time444");
+    var value = content.options[content.selectedIndex].text;
     document.getElementById("div24").innerHTML="night Time : " + value;
 
 }
@@ -73,26 +73,26 @@ function clicked() {
         document.getElementById("textarea2").innerText="GRAB SOME HEALTHY BREAKEFAST";
         document.getElementById("textimg").innerText="Good Morning!!!Have A Nice Day!!!";
 
-        document.getElementById("imgarea").style.backgroundImage="url(../morning.svg)";
+        document.getElementById("imgarea").style.backgroundImage="url(./morning.svg)";
     }
     if(y == hour){
         document.getElementById("textarea1").innerText="GOOD AFTERNOON !! TAKE SOME SLEEP!!";
         document.getElementById("textarea2").innerText="LETS HAVE SOME LUNCH!!";
         document.getElementById("textimg").innerText="Good Afternoon!!!!!!";
-        document.getElementById("imgarea").style.backgroundImage="url(../componebt.jpg)";
+        document.getElementById("imgarea").style.backgroundImage="url(./componebt.jpg)";
     }
     if(z == hour){
         document.getElementById("textarea1").innerText="GOOD EVENING!! ";
         document.getElementById("textarea2").innerHTML="<b>STOP YAWNING,LETS HAVE SOME TEA!! IT'S JUST EVENING!!<b>";
         document.getElementById("textimg").innerText="Good Evening!!!!!!";
-        document.getElementById("imgarea").style.backgroundImage="url(../lunch_image.png)";
+        document.getElementById("imgarea").style.backgroundImage="url(./lunch_image.png)";
     }
 
     if(zz == hour){
         document.getElementById("textarea1").innerText="GOOD NIGHT !!";
         document.getElementById("textarea2").innerText="CLOSE YOUR EYES AND GO TO SLEEP!!";
         document.getElementById("textimg").innerText="Good Night!!! Have A sweet Dreams!!!";
-        document.getElementById("imgarea").style.backgroundImage="url(../nightt.svg)";
+        document.getElementById("imgarea").style.backgroundImage="url(./nightt.svg)";
     }
     Makediv();
 }
